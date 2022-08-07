@@ -1,0 +1,97 @@
+.cardContainer{
+    width: 350px;
+    height: auto;
+    position: relative;
+    background: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card_wrapper{
+    width: 90%;
+    margin: 10px 10% auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardHeader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cardHeader p:nth-child(2){
+    padding: 2px 10px;
+    font-size: 13px;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#ff930f,#fff95b,#ffffff);
+}
+center{
+    padding:10px 0px 0px 0px;
+}
+.upperLabel,.lowerLabel{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.upperLabel p , .lowerLabel p{
+    font-size: 13.5px;
+}
+.progressBar{
+    width: 100%;
+    height: 7px;
+    position: relative;
+    background: rgb(216, 216, 216);
+    border-radius: 40px;
+    
+}
+.progressBar::after{
+    width: 80%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    border-radius: 40px;
+    background-color: red;
+    z-index: 1;
+}
+.stats{
+    margin-top: 10px;
+}
+.stats p{
+    font-size: 12px;
+}
+.confirm::after{
+    background-color: #0047FF;
+}
+.recover::after{
+    background-color: #26FD03;
+}
+progress{
+    width: 100%;
+}
+.arrows{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.arrow{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    padding: 2px;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.arrow:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
